@@ -13,20 +13,21 @@ html(lang="en")
                     li.list-item
                         a.list-item__link(href="#contactMe") Let's work together
         section#mainSection.presentation 
-            h1 Hi! I'm Maria Paulina 
+            h1.presentation__title Hi! <br>I'm Maria Paulina 
                 span UI Designer
         section#portfolio.portfolio
-            h2 Portfolio
-            article 
-                h3 Project 1
-                h6 Text Description
-                p
-                    a(href="#") See Project
-            article 
-                h3 Project 2
-                h6 Text Description
-                p
-                    a(href="#") See Project
+            .wrapper
+                h2.portfolio__title Portfolio
+                article.portfolio__article 
+                    h3 WOBI Catalog
+                    h6  Project for World of Business Ideas
+                    p   This Catalog was created for Innovation, entrepreunership, and creative fields.
+                        a.portfolio__link(href="#") See Project
+                article.portfolio__article 
+                    h3 TODO List
+                    h6 Rect TODO List
+                    p   This project was created during Bootcamp Female Edition at Globant
+                        a.portfolio__link(href="#") See Project
         section#aboutMe.about-me
                 h2 About Me
                 article

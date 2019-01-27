@@ -1,0 +1,131 @@
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 800;
+}
+
+body {
+    color: black;
+}
+
+.navigation {
+
+    position: fixed;
+    display: flex;
+    align-content: stretch;
+    height: auto;
+
+    ul {
+
+        display: flex;
+        align-content: stretch;
+        justify-content: center;
+        padding-left: 0px;
+
+        .list-item { 
+            
+            text-decoration: none;
+            list-style: none;
+            display: inline-flex;
+            padding: 20px;
+
+            &__link {
+
+                display: flex;
+                align-content: stretch;
+                text-decoration: none;
+                align-content: center;
+                color: black;
+                background: $grey-light;
+
+                &:hover {
+                    color: grey;
+                }
+
+            }
+        
+        }
+
+    }
+
+}
+
+section  {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    &.presentation {
+
+        display: flex;
+        height: 100vh;
+        align-items: center;
+
+        .presentation__title {
+
+            font-size: 60px;
+            font-family: 'Abril Fatface', cursive;
+            font-weight: normal;
+            align-content: center;
+
+        }
+
+    }
+
+    &.portfolio {
+
+        position: relative;
+        min-height: 600px;
+
+         .wrapper {
+             position: absolute;
+             margin-top: -50px;
+
+            .portfolio {
+
+                &__title {
+
+                    padding: 20px 0px;
+                    display: none;
+
+                }
+
+                &__article {
+
+                    padding: 20px;
+                    border-radius: 3px;
+                    background: white;
+                    width: 300px;
+                    height: auto;
+                    display: inline-block;
+                    margin-right: 20px;
+
+                    p {
+
+                        margin: 20px 0px;
+
+                    }
+
+                }
+
+                &__link {
+
+                    display: block;
+                    text-decoration: none;
+                    color: black;
+                    border-radius: 3px;
+                    background: $grey-light;
+                    padding: 10px;
+                    margin: 20px 0px;;
+
+                }
+
+            }
+
+         }
+
+    }
+}
