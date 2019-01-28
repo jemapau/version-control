@@ -1,7 +1,10 @@
 doctype html
 html(lang="en")
     head
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous")
         link(rel="stylesheet" href="main.css")
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous")
+
     body
         header
             nav.navigation
@@ -13,21 +16,35 @@ html(lang="en")
                     li.list-item
                         a.list-item__link(href="#contactMe") Let's work together
         section#mainSection.presentation 
-            h1.presentation__title Hi! <br>I'm Maria Paulina 
-                span UI Designer
+            .presentation-wrapper
+                h1.presentation__title Hi! <br>I'm Maria Paulina, UI Designer
+                ul.social
+                    li.social-item
+                        a.social-item__link(href="http://www.dribbble.com/jemapau")
+                            i.fab.fa-dribbble
+                    li.social-item
+                        a.social-item__link(href="http://www.github.com/jemapau")
+                            i.fab.fa-github-alt
+                    li.social-item
+                        a.social-item__link(href="http://www.linkedin.com/je.mapau")
+                            i.fab.fa-linkedin-in
         section#portfolio.portfolio
-            .wrapper
-                h2.portfolio__title Portfolio
-                article.portfolio__article 
+            .wrapper.card-columns
+                article.portfolio__article.card
                     h3 WOBI Catalog
                     h6  Project for World of Business Ideas
-                    p   This Catalog was created for Innovation, entrepreunership, and creative fields.
-                        a.portfolio__link(href="#") See Project
-                article.portfolio__article 
+                    p.portfolio__desc   This Catalog was created for Innovation, entrepreunership, and creative fields.
+                    a.portfolio__link.btn(href="http://wobicatalogue.com/#home" target="_blank") See Project
+                article.portfolio__article.card
                     h3 TODO List
-                    h6 Rect TODO List
-                    p   This project was created during Bootcamp Female Edition at Globant
-                        a.portfolio__link(href="#") See Project
+                    h6 REACT project
+                    p.portfolio_desc   Project was created during Bootcamp Female Edition
+                    a.portfolio__link.btn(href="https://todo-list-zgrniqxdyl.now.sh/" target="_blank") See Project
+                article.portfolio__article.card
+                    h3 Special El Colombiano
+                    h6 HTML, CSS and JavaScript
+                    p.portfolio_desc   Newspaper special remembering a zone on Medellin City
+                    a.portfolio__link.btn(href="http://www.elcolombiano.com/especiales/operacion-orion" target="_blank") See Project
         section#aboutMe.about-me
                 h2 About Me
                 article

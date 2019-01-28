@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
+@import url("https://fonts.googleapis.com/css?family=Yantramanav");
 * {
   margin: 0px; }
 
 body {
   background-color: #f1f1f1;
-  font-family: 'Arial', 'Helvetica'; }
+  font-family: 'Yantramanav', 'Arial', sans-serif; }
 
 h1,
 h2,
@@ -17,9 +18,13 @@ h6 {
 body {
   color: black; }
 
+p {
+  line-height: 1.4; }
+
 .navigation {
   position: fixed;
   display: flex;
+  right: 0;
   align-content: stretch;
   height: auto; }
   .navigation ul {
@@ -38,48 +43,68 @@ body {
         text-decoration: none;
         align-content: center;
         color: black;
-        background: #f1f1f1; }
+        text-transform: uppercase; }
         .navigation ul .list-item__link:hover {
           color: grey; }
 
-section {
+section.presentation {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  align-content: center;
+  justify-content: center; }
+section .presentation-wrapper {
+  align-content: center; }
+  section .presentation-wrapper .social {
+    float: right; }
+    section .presentation-wrapper .social-item {
+      list-style: none;
+      display: inline; }
+      section .presentation-wrapper .social-item__link {
+        color: #607D8B;
+        font-size: 24px;
+        margin: 0px 5px; }
+        section .presentation-wrapper .social-item__link:hover {
+          opacity: 0.5; }
+section .presentation__title {
+  font-size: 60px;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: normal;
+  align-content: center; }
+section.portfolio {
   max-width: 1024px;
-  margin: 0 auto; }
-  section.presentation {
-    display: flex;
-    height: 100vh;
-    align-items: center; }
-    section.presentation .presentation__title {
-      font-size: 60px;
-      font-family: 'Abril Fatface', cursive;
-      font-weight: normal;
-      align-content: center; }
-  section.portfolio {
-    position: relative;
-    min-height: 600px; }
-    section.portfolio .wrapper {
-      position: absolute;
-      margin-top: -50px; }
-      section.portfolio .wrapper .portfolio__title {
-        padding: 20px 0px;
-        display: none; }
-      section.portfolio .wrapper .portfolio__article {
-        padding: 20px;
-        border-radius: 3px;
-        background: white;
-        width: 300px;
-        height: auto;
-        display: inline-block;
-        margin-right: 20px; }
-        section.portfolio .wrapper .portfolio__article p {
-          margin: 20px 0px; }
-      section.portfolio .wrapper .portfolio__link {
-        display: block;
-        text-decoration: none;
-        color: black;
-        border-radius: 3px;
-        background: #f1f1f1;
-        padding: 10px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 600px; }
+  section.portfolio .wrapper {
+    position: absolute;
+    margin-top: -50px; }
+    section.portfolio .wrapper .portfolio__title {
+      padding: 20px 0px;
+      display: none; }
+    section.portfolio .wrapper .portfolio__article {
+      padding: 30px;
+      border-radius: 5px;
+      border: 0px;
+      background: white;
+      height: auto;
+      display: inline-block;
+      box-sizing: border-box; }
+      section.portfolio .wrapper .portfolio__article h6 {
+        margin: 10px 0;
+        font-size: 14px;
+        color: grey; }
+      section.portfolio .wrapper .portfolio__article p {
         margin: 20px 0px; }
+    section.portfolio .wrapper .portfolio__link {
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+      border: none;
+      background: #607D8B; }
+      section.portfolio .wrapper .portfolio__link:focus {
+        box-shadow: 0 0 0 0.2rem #f1f1f1; }
+      section.portfolio .wrapper .portfolio__link:hover {
+        background: #353755; }
 
 /*# sourceMappingURL=main.css.map */

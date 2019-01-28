@@ -1,6 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Yantramanav');
+
+
+// Variable Colors
 
 $grey-light: #f1f1f1;
+$blue-grey: #607D8B;
+$purple: #353755;
+$purple-middle: #9839a0;
+$purple-light: #E1BCF2;
+$aqua: #5BD3C7;
+
+//Font Sizes
+
+$font-sm: 14px;
+$font-md: 18px;
+$font-lg: 24px;
+$font-xl: 28px;
+$font-xxl: 60px;
 
 * {
     margin: 0px;
@@ -8,7 +25,7 @@ $grey-light: #f1f1f1;
 
 body {
     background-color: #f1f1f1;
-    font-family: 'Arial', 'Helvetica';
+    font-family: 'Yantramanav', 'Arial', sans-serif;
 }
 
 

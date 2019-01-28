@@ -12,10 +12,15 @@ body {
     color: black;
 }
 
+p {
+    line-height: 1.4;
+}
+
 .navigation {
 
     position: fixed;
     display: flex;
+    right: 0;
     align-content: stretch;
     height: auto;
 
@@ -40,11 +45,9 @@ body {
                 text-decoration: none;
                 align-content: center;
                 color: black;
-                background: $grey-light;
+                text-transform: uppercase;
 
-                &:hover {
-                    color: grey;
-                }
+                &:hover {  color: grey; }
 
             }
         
@@ -55,18 +58,51 @@ body {
 }
 
 section  {
-    max-width: 1024px;
-    margin: 0 auto;
 
     &.presentation {
 
         display: flex;
         height: 100vh;
         align-items: center;
+        align-content: center;
+        justify-content: center;    
 
-        .presentation__title {
+    }
 
-            font-size: 60px;
+    .presentation {
+
+        &-wrapper {
+            align-content: center;
+
+            .social {
+                float: right;
+
+                &-item {
+
+                    list-style: none;
+                    display: inline;
+
+                    &__link { 
+                        color: $blue-grey;
+                        font-size: $font-lg;
+                        margin: 0px 5px;
+
+                        &:hover {
+
+                            opacity: 0.5;
+
+                        }
+                     }
+    
+                }
+    
+            }
+
+        }
+
+        &__title {
+
+            font-size: $font-xxl;
             font-family: 'Abril Fatface', cursive;
             font-weight: normal;
             align-content: center;
@@ -76,7 +112,8 @@ section  {
     }
 
     &.portfolio {
-
+        max-width: 1024px;
+        margin: 0 auto;
         position: relative;
         min-height: 600px;
 
@@ -95,31 +132,37 @@ section  {
 
                 &__article {
 
-                    padding: 20px;
-                    border-radius: 3px;
+                    padding: 30px;
+                    border-radius: 5px;
+                    border: 0px;
                     background: white;
-                    width: 300px;
                     height: auto;
                     display: inline-block;
-                    margin-right: 20px;
+                    box-sizing: border-box;
 
-                    p {
-
-                        margin: 20px 0px;
-
+                    h6 {
+                        margin: 10px 0;
+                        font-size: 14px;
+                        color: grey;
                     }
+
+                    p {  margin: 20px 0px;}
 
                 }
 
+ 
+
                 &__link {
 
-                    display: block;
                     text-decoration: none;
-                    color: black;
-                    border-radius: 3px;
-                    background: $grey-light;
+                    color: white;
                     padding: 10px;
-                    margin: 20px 0px;;
+                    border: none;
+                    background: $blue-grey;
+
+                    &:focus { box-shadow: 0 0 0 0.2rem $grey-light; }
+
+                    &:hover { background: $purple; }
 
                 }
 
